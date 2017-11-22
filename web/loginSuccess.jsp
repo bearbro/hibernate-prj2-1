@@ -1,11 +1,5 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: Bro、小熊
-  Date: 2017/10/2
-  Time: 17:21
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="sx" uri="/struts-dojo-tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -21,15 +15,21 @@
                  value="%{#request.loginUser.account}" readonly="true"/>
     <s:textfield type="password" name="loginUser.password"
                  label="修改密码" value="%{#request.loginUser.password}"/>
-    <!-- 省略其它表单域 -->
+    <s:radio name="loginUser.sex" list="#{ 1:'男', 0:'女'}"
+             value="%{#request.loginUser.sex}" label="修改性别"/>
+    <sx:datetimepicker name="loginUser.birthday"   displayFormat="yyyy-MM-dd"
+                       language="utf-8" label="请输入生日" value="%{#request.loginUser.birthday}"/>
+    <s:textfield name="loginUser.phone" value="%{#request.loginUser.phone}" label="修改电话"/>
+    <s:textfield name="loginUser.email" value="%{#request.loginUser.email}"  label="修改邮箱"/>
+    <s:textfield name="loginUser.address" value="%{#request.loginUser.address}"  label="修改地址"/>
+    <s:textfield name="loginUser.zipcode" value="%{#request.loginUser.zipcode}"  label="修改邮政编码"/>
+    <s:textfield name="loginUser.fax" value="%{#request.loginUser.fax}"  label="修改传真号"/>
     <s:submit value="修改"/>
 </s:form>
-<s:property value="loginUser.password"/>
 <s:form action="delete" method="post">
     <s:hidden name="loginUser.customerId"
               value="%{#request.loginUser.customerId}"/>
     <s:submit value="删除"/>
 </s:form>
-<a href="./allitems">查看所有商品信息</a>
 </body>
 </html>

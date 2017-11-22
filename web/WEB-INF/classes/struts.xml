@@ -22,8 +22,6 @@
             <result name="regsuccess">/regSuccess.jsp</result>
             <result name="regfail">/register.jsp</result>
         </action>
-        <action name="allitems" class="cn.edu.zjut.action.ItemAction" method="show">
-            <result name="itemsuccess">/itemList.jsp</result>
-        </action>
+
     </package>
 </struts>

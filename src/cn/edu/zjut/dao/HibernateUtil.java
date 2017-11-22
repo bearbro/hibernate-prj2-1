@@ -63,7 +63,6 @@ public class HibernateUtil {
 
     public static void closeSession() throws HibernateException {
         Session session = (Session) threadLoacl.get();
-
         threadLoacl.set(null);
         if (session != null) {
             session.close();
