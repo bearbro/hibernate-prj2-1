@@ -10,7 +10,8 @@ public class ItemService {
 
     public List findByHql() {
         ItemDAO dao = new ItemDAO();
-        String hql = "from cn.edu.zjut.po.Item";
+        String hql = "select title,cost from Item where cost =( " +
+                "select Max(item.cost) from Item as item )";
         List list = dao.findByHql(hql);
         dao.getSession().close();
         return list;
