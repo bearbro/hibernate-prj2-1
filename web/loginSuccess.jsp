@@ -31,5 +31,6 @@
               value="%{#request.loginUser.customerId}"/>
     <s:submit value="删除"/>
 </s:form>
+<a href="./findItems">查看商品信息</a>
 </body>
 </html>

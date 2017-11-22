@@ -11,9 +11,7 @@
         <property name="hibernate.connection.password">dbpassword</property>
         <!--<property name="connection.autocommit">true</property>-->
         <mapping resource="cn/edu/zjut/po/Customer.hbm.xml"/>
-        <!--<mapping resource="cn/edu/zjut/po/Item.hbm.xml"/>-->
+        <mapping resource="cn/edu/zjut/po/Item.hbm.xml"/>
         <!--<mapping class="cn.edu.zjut.po.Item"/>-->
-        <!--<mapping resource="cn/edu/zjut/po/ItemBasic.hbm.xml"/>-->
-        <!--<mapping resource="cn/edu/zjut/po/ItemDetail.hbm.xml"/>-->
     </session-factory>
 </hibernate-configuration>
