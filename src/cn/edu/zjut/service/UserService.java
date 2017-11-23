@@ -5,7 +5,6 @@ import cn.edu.zjut.po.Customer;
 import com.opensymphony.xwork2.ActionContext;
 import org.hibernate.Transaction;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Map;
 

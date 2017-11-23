@@ -1,5 +1,4 @@
 package cn.edu.zjut.po;
-
 public class ContactInfo {
     private String phone;
     private String email;
@@ -16,6 +15,7 @@ public class ContactInfo {
     }
 
     public ContactInfo() {
+
     }
 
     public String getPhone() {

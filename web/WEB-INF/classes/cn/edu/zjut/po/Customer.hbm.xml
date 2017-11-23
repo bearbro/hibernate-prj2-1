@@ -7,7 +7,8 @@
     <class name="cn.edu.zjut.po.Customer" table="customer" schema="hibernatedb">
         <id name="customerId">
             <column name="customerID" sql-type="int(11)"/>
-            <generator class="increment"/> <!--自动递增-->
+            <generator class="identity"/> <!--底层数据库生成-->
+            <!--<generator class="increment"/>-->
         </id>
         <property name="account">
             <column name="account" sql-type="varchar(20)" length="20" />

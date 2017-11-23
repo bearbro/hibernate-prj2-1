@@ -12,13 +12,13 @@
             <column name="title" sql-type="varchar(30)"/>
         </property>
         <property name="description">
-            <column name="description" sql-type="varchar(200)" length="200" not-null="true"/>
+            <column name="description" sql-type="varchar(200)" length="200" />
         </property>
         <property name="cost">
-            <column name="cost" sql-type="float" precision="-1" not-null="true"/>
+            <column name="cost" sql-type="float" precision="-1" />
         </property>
         <property name="image">
-            <column name="image" sql-type="blob" not-null="true"/>
+            <column name="image" sql-type="blob" />
         </property>
     </class>
 </hibernate-mapping>
